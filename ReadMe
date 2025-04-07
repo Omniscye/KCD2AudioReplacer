@@ -1,0 +1,55 @@
+🎵 Modding Music into Kingdom Come: Deliverance 2
+Using KCD2AudioReplacer by Omiscye
+
+What You Need First
+Download the SQBC Editor:
+https://www.nexusmods.com/kingdomcomedeliverance/mods/414
+
+Quick Overview (For the ADHD crew)
+Get the SQBC files you want to change from music.pak in the game files.
+
+Put those somewhere easy to find.
+
+Open SQBC Editor, extract the .ogg files from the .sqbc.
+Grab whatever music you want to use as a replacement (MP3, OGG, or WAV – doesn’t matter).
+Download/Open my tool (KCD2AudioReplacer.exe).
+
+In the app:
+Select the folder with the original .ogg files you just extracted.
+Select your custom music track.
+Choose an output folder.
+Hit Start.
+
+⚠️ Heads-up:
+My tool will randomly cut parts of your chosen song and fit it into each .ogg file's original time limit.
+The timing is defined by the original .wdsh file – we don’t touch that.
+
+What's Happening Under the Hood
+So you're not sitting there wondering “WTF is this app doing?” – here’s the basic idea:
+
+It reads all the original .ogg files and figures out how long each one is.
+Then it takes your chosen song and slices random segments of it to fit the same durations.
+It uses FFmpeg in the background (via pydub) to do all the slicing and converting.
+You’ll see some CMD windows flash – that’s normal, that’s just FFmpeg doing its thing.
+
+After It’s Done
+Open SQBC Editor again.
+Hit File > New.
+
+Add your new .ogg files one at a time, in the exact same order (use “Sort by name” in Windows Explorer to help).
+Save your new .sqbc somewhere.
+Rename it to match the original .sqbc you were replacing.
+Put it back into the correct mod structure, just like any other mod.
+
+Important Notes
+I’m not explaining how to make a mod or set up the folder structure or pack a .pak file.
+If you don’t know that part, join the KCD2 Modding Discord – we’ve got you.
+
+Make sure FFmpeg is installed and added to your system PATH.
+If it’s not, the tool won’t work. Google “how to add FFmpeg to PATH” if you’re stuck.
+
+Done?
+✅ Drop it in your Mods folder, pack it if needed, run the game.
+✅ Enjoy your custom music.
+🍿 And yeah, grab some snacks.
+
